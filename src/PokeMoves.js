@@ -6,14 +6,12 @@ const PokeMoves = ()=> {
     <div>
         <h1>PokeMoves</h1>
         <ul>
-            {is Logged 
-            ? moves.map(item => (
+            {moves.map(item => (
                 // <li>
                 //     {item.id}. {item.move}
                 // </li>
                 <PokeMoveCard key={item.id} item ={item} />
-            ))
-            : "Not Logged In"}
+            ))}
         </ul>
     </div>
 )
